@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+
+    <title>Interaktivní mapa krajů ČR</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="content">
+        <div id="map">
+            <object id="svg-kraje" data="kraje.svg" type="image/svg+xml"></object>
+        </div>
+        <div id="information">
+            <h4>Počty obyvatel v jednotlivých letech:</h4>
+            <p class="year-label">Rok 1991</p>
+                <p id="year-1991" class="year">N/A</p>
+            <p class="year-label">Rok 2001</p>
+                <p id="year-2001" class="year">N/A</p>
+            <p class="year-label">Rok 2011</p>
+                <p id="year-2011" class="year">N/A</p>
+        </div>
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
