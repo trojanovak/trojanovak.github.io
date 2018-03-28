@@ -1,6 +1,4 @@
-let map = document.getElementById("svg-kraje");
-let SVGDocument = map.getSVGDocument();
-let paths = SVGDocument.getElementsByTagName("path");
+
 let opacity = 0.3;
 
 function changeOpacity(object) {
@@ -22,10 +20,14 @@ function decreaseOpacity(event) {
 }
 
 window.onload = function() {
+    let map = document.getElementById("svg-kraje");
+    let SVGDocument = map.getSVGDocument();
+    let paths = SVGDocument.getElementsByTagName("path");
 	for(i = 0; i < paths.length; i++) {
 		paths[i].style.stroke = "#9e6400";
 		paths[i].style.fill = "#d69728";
-		paths[i].style.opacity = opacity;
+        paths[i].style.opacity = opacity;
+        
 	}
 
 	for(j = 0; j < paths.length; j++) {
